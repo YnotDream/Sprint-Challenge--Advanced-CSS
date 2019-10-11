@@ -2,16 +2,16 @@
 
 // Border mixin to identify rapidly div and boxes
 .bordered() {
- border: 1px solid red;
+  border: 1px solid red;
 }
 
 // flexbox mixin
 .flexbox (@dir:row,@justify:flex-start,@items:stretch,@wrap:nowrap) {
-    display: flex;
-    flex-direction: @dir;
-    justify-content: @justify;
-    align-items: @items;
-    flex-wrap: @wrap;
+  display: flex;
+  flex-direction: @dir;
+  justify-content: @justify;
+  align-items: @items;
+  flex-wrap: @wrap;
 }
 
 // navstyle
@@ -19,4 +19,17 @@
   padding: @padding;
   text-decoration: @decoration;
   color: @color;
+}
+
+// button
+
+.buttoned (@bg-color, @color, @radius, @border) {
+  background-color: @bg-color;
+  color: @color;
+  border-radius: @radius;
+  border: @border;
+  &:hover {
+    background-color: @color;
+    color: @bg-color;
+  }
 }
