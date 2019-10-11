@@ -193,6 +193,12 @@ body {
   width: 1000px;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  html,
+  body {
+    width: 100%;
+  }
+}
 h1,
 h2,
 h3,
@@ -218,6 +224,11 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
 }
 .navbar {
   display: flex;
@@ -249,6 +260,15 @@ footer {
 .home .intro {
   color: #23293B;
 }
+.home .intro img {
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+    height: 50%;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -260,15 +280,31 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img + img {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 90%;
+    margin: auto;
+  }
+}
 .home .visit-planets {
   padding: 15px;
   color: #5E6164;
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    margin-top: 13px;
+  }
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -284,16 +320,34 @@ footer {
   justify-content: center;
   color: #5E6164;
 }
-.home .walk .walk-text {
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin: auto;
+    padding: 10px;
+  }
+}
+.home .walk-text {
   width: 50%;
 }
-.home .walk .walk-text h3 {
+@media (max-width: 500px) {
+  .home .walk-text {
+    width: 100%;
+    margin-top: 10px;
+    padding: 3%;
+  }
+}
+.home h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.home p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn button {
+.home .btn button {
   background-color: #22283A;
   color: white;
   border-radius: 5px;
@@ -305,15 +359,28 @@ footer {
   line-height: 1em;
   font-size: 1.7rem;
 }
-.home .walk .walk-text .btn button:hover {
+.home .btn button:hover {
   background-color: white;
   color: #22283A;
 }
-.home .walk .walk-img {
+@media (max-width: 500px) {
+  .home .btn button {
+    width: 100%;
+    font-size: 1.5rem;
+    height: 60px;
+  }
+}
+.walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+@media (max-width: 500px) {
+  .walk-img {
+    width: 95%;
+    margin: auto;
+  }
+}
+.walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
