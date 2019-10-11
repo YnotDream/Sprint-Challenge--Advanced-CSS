@@ -1,1 +1,22 @@
 // Mixins Here
+
+// Border mixin to identify rapidly div and boxes
+.bordered() {
+ border: 1px solid red;
+}
+
+// flexbox mixin
+.flexbox (@dir:row,@justify:flex-start,@items:stretch,@wrap:nowrap) {
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @justify;
+    align-items: @items;
+    flex-wrap: @wrap;
+}
+
+// navstyle
+.navstyle (@padding: 1.2rem; @decoration: none; @color: inherit) {
+  padding: @padding;
+  text-decoration: @decoration;
+  color: @color;
+}
